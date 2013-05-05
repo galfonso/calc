@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Peso:</b>
+  <%= @pesaje.peso %>
+</p>
+
+<p>
+  <b>Comidasconproteinas:</b>
+  <%= @pesaje.ComidasConProteinas %>
+</p>
+
+
+<%= link_to 'Edit', edit_pesaje_path(@pesaje) %> |
+<%= link_to 'Back', pesajes_path %>

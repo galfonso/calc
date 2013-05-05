@@ -1,0 +1,25 @@
+<%= form_for(@pesaje) do |f| %>
+  <% if @pesaje.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pesaje.errors.count, "error") %> prohibited this pesaje from being saved:</h2>
+
+      <ul>
+      <% @pesaje.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :peso %><br />
+    <%= f.text_field :peso %>
+  </div>
+  <div class="field">
+    <%= f.label :ComidasConProteinas %><br />
+    <%= f.number_field :ComidasConProteinas %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

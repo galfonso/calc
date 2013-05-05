@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  peso: 1.5
+  ComidasConProteinas: 1
+
+two:
+  peso: 1.5
+  ComidasConProteinas: 1
